@@ -1,0 +1,39 @@
+{{>headerLogin}}
+<div id="createUser" class="container">
+<h2>Formulario para ingresar un nuevo usuario</h2>
+<p>utilice este formulario para ingresar la informacion del usuario</p>
+    <div class="col-xs-12 col-sm-10 col-md-12 col-sm-offset-1 col-md-offset 2">
+        <br>
+        <br>
+        <form action="/crearUsuario" method="get">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="documento">Documento de Identidad</label>
+                    <input type="number" class="form-control" name="documentoDeIdentidad">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="Nombre">Nombre Usuario</label>
+                    <input type="text" class="form-control" name="nombre">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="Nombre">Correo</label>
+                    <input type="text" class="form-control" name="correo">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="Nombre">Telefono</label>
+                    <input type="text" class="form-control" name="telefono">
+                </div>
+            </div>
+             <button class="btn btn-success">Registrar</button>
+        </form>
+    </div>
+</div>
+{{{crearUsuario documentoDeIdentidad nombre correo telefono}}}
+
+{{>footer}}
